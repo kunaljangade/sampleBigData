@@ -31,7 +31,7 @@ public class Collector extends Database {
 				BasicDBObject document = new BasicDBObject();
 				// use comma as separator
 				String[] Agetype = line.split(cvsSplitBy);
-				
+
 
 				document.put("Month of Date", Agetype[7]);
 				document.put("Sex ", Agetype[8]);
@@ -62,6 +62,7 @@ public class Collector extends Database {
 			}
 		}
 
+		System.out.println("Complete project");
 		System.out.println("Done");
 	}
 
